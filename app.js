@@ -2,6 +2,7 @@ require('./config');
 
 var express = require('express')
   , hoganEngine = require('hogan-engine')
+  , _ = require('underscore')
   , app = express();
 
 module.exports = app;
@@ -18,7 +19,9 @@ app.configure(function() {
   // Serve static files correctly
   app.use('/js',express.static(APP_ROOT + '/public/js'));
   app.use('/css',express.static(APP_ROOT + '/public/css'));
-  app.use('/img',express.static(APP_ROOT + '/public/img'));  
+  app.use('/img',express.static(APP_ROOT + '/public/img'));
+
+  _.extend(app.locals,require(APP_ROOT + '/app/helpers'));
 });
 
 // Require the root app
