@@ -1,0 +1,81 @@
+body {
+  font-family: 'Carrois Gothic SC', sans-serif;
+  /* IE10 Consumer Preview */ 
+  background-image: -ms-linear-gradient(left, #FFFFFF 0%, #00A3EF 200%);
+
+  /* Mozilla Firefox */ 
+  background-image: -moz-linear-gradient(left, #FFFFFF 0%, #00A3EF 200%);
+
+  /* Opera */ 
+  background-image: -o-linear-gradient(left, #FFFFFF 0%, #00A3EF 200%);
+
+  /* Webkit (Safari/Chrome 10) */ 
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(0, #FFFFFF), color-stop(2.0, #00A3EF));
+
+  /* Webkit (Chrome 11+) */ 
+  background-image: -webkit-linear-gradient(left, #FFFFFF 0%, #00A3EF 200%);
+
+  /* W3C Markup, IE10 Release Preview */ 
+  background-image: linear-gradient(to right, #FFFFFF 0%, #00A3EF 200%);
+}
+
+.onethird {
+  width: 32%;
+}
+
+.twothirds {
+  width: 66%;
+}
+
+.half {
+  width: 49%;
+}
+
+.logo {
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.userRecommendation {
+  margin-right: 10px;
+  float: right;
+}
+
+.row {
+  margin-left: 10px;
+  width: 100%;
+}
+
+.container {
+  float: left;
+  background-color: transparent;  
+}
+
+#logoDiv {
+  font-size: 40px;
+  display: inline-block;
+}
+
+#userInfo {
+  display: inline-block;
+  font-size: 30px;
+  margin-left: 10px;
+}
+
+#bookCoverImg {
+  vertical-align: top;
+  display: inline-block;
+}
+
+#viewerCanvasContainer {
+  vertical-align: top;
+  display: inline-block;
+  margin-left: 10px;
+  margin-top: 5px;
+  min-width: 580px;
+}
+
+#viewerCanvas {
+  max-height: 90%;
+}

@@ -1,0 +1,33 @@
+
+<!DOCTYPE html "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  {{> shared/header.html }}
+  <body>
+    <div class="row container">
+      <div id="logoDiv" class="onethird">
+        <span>
+          Presented by:
+        </span>
+        <span class="logo">
+          Captiv
+        </span>
+      </div>
+      <div id="userInfo" class="twothirds">
+        <span class="userRecommendation">Recommended for yjkogan</span>
+      </div>
+    </div>
+    <div class="container row">
+      <img src="" id="bookCoverImg" class="onethird" />
+
+      <div id="viewerCanvasContainer" class="twothirds">
+        <div id="viewerCanvas" style="width: 100%; height: 100%; display: none"></div>
+      </div>
+    </div>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        getBookByTitleWithQuote("{{ bookTitle }}", "{{ quote }}");
+      });
+    </script>
+  </body>
+</html>
