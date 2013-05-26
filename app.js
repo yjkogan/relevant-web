@@ -17,7 +17,8 @@ app.configure(function() {
 
   // Serve static files correctly
   app.use('/js',express.static(APP_ROOT + '/public/js'));
-  app.use('/css',express.static(APP_ROOT + '/public/css'));  
+  app.use('/css',express.static(APP_ROOT + '/public/css'));
+  app.use('/img',express.static(APP_ROOT + '/public/img'));  
 });
 
 // Require the root app

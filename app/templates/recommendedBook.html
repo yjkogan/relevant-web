@@ -5,7 +5,7 @@
   {{> shared/header.html }}
   <body>
     <div class="row container">
-      <div id="logoDiv" class="onethird">
+      <div id="logoDiv" class="half">
         <span>
           Presented by:
         </span>
@@ -13,13 +13,23 @@
           Captiv
         </span>
       </div>
-      <div id="userInfo" class="twothirds">
-        <span class="userRecommendation">Recommended for yjkogan</span>
+      <div id="userInfo" class="half">
+        <span class="userRecommendation">Recommended for 
+          <a href="http://www.twitter.com/{{ user }}">
+            <button type="button" class="btn">
+              {{ user }}  <img src="/img/logo-twitter.png" class="twitter-icon"/>
+            </button>
+          </a>
+        </span>
       </div>
     </div>
-    <div class="container row">
-      <img src="" id="bookCoverImg" class="onethird" />
-
+    <div class="container row" id="bookInfoContainer">
+      <div class="onethird" id="bookCoverContainer">
+        <img src="" id="bookCoverImg"/>
+        <div class="amazon-link">
+          Buy this on  <a href="http://www.amazon.com/s?field-keywords=great+gatsby"><img src='img/amazon-logo.jpeg' class="amazon-icon"/></a>
+        </div>
+      </div>
       <div id="viewerCanvasContainer" class="twothirds">
         <div id="viewerCanvas" style="width: 100%; height: 100%; display: none"></div>
       </div>
