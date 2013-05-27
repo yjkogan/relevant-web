@@ -1,22 +1,19 @@
 body {
-  font-family: 'Carrois Gothic SC', sans-serif;
-  /* IE10 Consumer Preview */ 
-  background-image: -ms-linear-gradient(left, #FFFFFF 0%, #00A3EF 200%);
+  font-family: 'Libre Baskerville', serif;
+  background-color: #EEEEEE;
+}
 
-  /* Mozilla Firefox */ 
-  background-image: -moz-linear-gradient(left, #FFFFFF 0%, #00A3EF 200%);
+a:link {
+  text-decoration: none;
+  color: #000000;
+}
+a:visited {
+  text-decoration: none;
+  color: #000000;  
+}
 
-  /* Opera */ 
-  background-image: -o-linear-gradient(left, #FFFFFF 0%, #00A3EF 200%);
-
-  /* Webkit (Safari/Chrome 10) */ 
-  background-image: -webkit-gradient(linear, left top, right top, color-stop(0, #FFFFFF), color-stop(2.0, #00A3EF));
-
-  /* Webkit (Chrome 11+) */ 
-  background-image: -webkit-linear-gradient(left, #FFFFFF 0%, #00A3EF 200%);
-
-  /* W3C Markup, IE10 Release Preview */ 
-  background-image: linear-gradient(to right, #FFFFFF 0%, #00A3EF 200%);
+a:hover {
+  text-decoration: underline;
 }
 
 .onethird {
@@ -31,53 +28,8 @@ body {
   width: 49%;
 }
 
-.logo {
-  font-family: 'Lato', sans-serif;
-  font-weight: 300;
-  font-style: italic;
-}
-
-.userRecommendation {
-  margin-right: 25px;
-  line-height: 50px;
-  float: right;
-  vertical-align: bottom;
-}
-
 .row {
-  margin-left: 10px;
   width: 100%;
-}
-
-/* Button styling from http://cssgradientbutton.com/*/
-.btn {
-  height: 35px;
-  font-size: 20px;
-  border:1px solid #96f0ff;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  border-radius: 3px;
-  padding: 5px 5px 5px 5px;
-  text-shadow: 1px 1px 0 rgba(0,0,0,0.3);
-  font-weight:bold;
-  text-align: center; 
-  background-color: #cef8ff;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#cef8ff), to(#7fe0f8));
-  background-image: -webkit-linear-gradient(top, #cef8ff, #7fe0f8);
-  background-image: -moz-linear-gradient(top, #cef8ff, #7fe0f8);
-  background-image: -ms-linear-gradient(top, #cef8ff, #7fe0f8);
-  background-image: -o-linear-gradient(top, #cef8ff, #7fe0f8);
-  background-image: linear-gradient(to bottom, #cef8ff, #7fe0f8);filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#cef8ff, endColorstr=#7fe0f8);
-}
-
-.btn:hover {
-  border:1px solid #68e9ff; background-color: #9bf1ff;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#9bf1ff), top(#4fd4f5));
-  background-image: -webkit-linear-gradient(top, #9bf1ff, #4fd4f5);
-  background-image: -moz-linear-gradient(top, #9bf1ff, #4fd4f5);
-  background-image: -ms-linear-gradient(top, #9bf1ff, #4fd4f5);
-  background-image: -o-linear-gradient(top, #9bf1ff, #4fd4f5);
-  background-image: linear-gradient(to bottom, #9bf1ff, #4fd4f5);filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#9bf1ff, endColorstr=#4fd4f5);
 }
 
 .container {
@@ -85,64 +37,63 @@ body {
   background-color: transparent;  
 }
 
-.twitter-icon {
-  height: 90%;
+.white {
+  background-color: white;
 }
+
 .amazon-icon {
   height: 30px;
   vertical-align: middle;
 }
 
-.amazon-link {
-  margin-top: 10px;
-  padding-right: 50px;
-  height: 5%;
-  line-height: 5%;
-  font-size: 35px;
-  text-align: center;
-  color: #000000;
-  text-decoration: none;
+#header-container {
+  height: 66px;
+  box-shadow: 0 4px 4px #AAAAAA;
+}
+
+#logo-img {
+  margin-top: 5px;
+  margin-left: 65px;
+  max-height: 85%;
+}
+
+#recommended-for-container {
+  font-size: 20px;
+  color: #666666;
   float: right;
+  margin-top: 9px;
+  margin-right: 25px;
 }
 
-#logoDiv {
-  font-size: 40px;
-  display: inline-block;
-  text-align: center;
-  vertical-align: bottom;  
+#twitter-img {
+  vertical-align: middle;
 }
 
-#userInfo {
-  display: inline-block;
-  font-size: 30px;
-  margin-left: 10px;
-  height: 50px;
-  text-align: center;
-}
-
-#bookCoverContainer {
+#book-cover-container {
   vertical-align: top;
   display: inline-block;
 }
 
-#bookCoverImg {
+#book-cover-img {
   height: 80%;
   max-width: 100%;
   float: right;
 }
 
-#bookInfoContainer {
+#book-info-container {
   margin-top: 10px;
+  margin-left: 10px;  
 }
 
-#viewerCanvasContainer {
+#viewer-canvas-container {
   vertical-align: top;
   display: inline-block;
-  margin-left: 10px;
+  margin-left: 5px;
+  margin-right: 10px;
   margin-top: 5px;
   min-width: 580px;
 }
 
-#viewerCanvas {
-  max-height: 90%;
+#viewer-canvas {
+  max-height: 80%;
 }

@@ -1,7 +1,7 @@
 var DOC = {};
 
 function getBookByTitleWithQuote(title,quote) {
-  $('#viewerCanvas').hide();
+  $('#viewer-canvas').hide();
   DOC.bookTitle = title;
   DOC.quote = quote;
   // Source: https://google-developers.appspot.com/books/docs/viewer/examples/booksapi-titlesearch
@@ -48,11 +48,11 @@ function loadBook() {
 
 function showBook() {
   // We have the book ID, API is loaded, now just show it
-  var canvas = document.getElementById('viewerCanvas');
+  var canvas = document.getElementById('viewer-canvas');
   DOC.viewer = new google.books.DefaultViewer(canvas);
   DOC.viewer.load(DOC.identifier);
 
-  $('#viewerCanvas').show();
+  $('#viewer-canvas').show();
   DOC.id = setInterval(searchForText, 50);
 }
 
@@ -78,10 +78,10 @@ function closeResultsBox() {
 
 function showCover() {
   var imgURL = "http://bks5.books.google.com/books?id="+ DOC.identifier +"&printsec=frontcover&img=1&zoom=0&source=gbs_api";
-  $("#bookCoverImg").attr("src",imgURL);
+  $("#book-cover-img").attr("src",imgURL);
 }
 
 function showCanvas(showing) {
-  var canvasDiv = document.getElementById('viewerCanvas');
+  var canvasDiv = document.getElementById('viewer-canvas');
   canvasDiv.style.display =  (showing) ? 'block' : 'none';
 }

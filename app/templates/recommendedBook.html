@@ -3,35 +3,22 @@
   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
   {{> shared/header.html }}
-  <body>
-    <div class="row container">
-      <div id="logoDiv" class="half">
-        <span>
-          Presented by:
-        </span>
-        <span class="logo">
-          Captiv
-        </span>
+  <body style="margin:0;">
+    <div class="row container white shadow" id="header-container">
+      <div class="container">
+        <img src="/img/logo.png" id="logo-img"/>
       </div>
-      <div id="userInfo" class="half">
-        <span class="userRecommendation">Recommended for 
-          <a href="http://www.twitter.com/{{ user }}">
-            <button type="button" class="btn">
-              {{ user }}  <img src="/img/logo-twitter.png" class="twitter-icon"/>
-            </button>
-          </a>
-        </span>
+      <div class="container" id="recommended-for-container">
+        recommended for <a href="http://www.twitter.com/{{ user}}" id="twitter-link"><strong>@{{ user }}</strong></a>
+        <img src="https://api.twitter.com/1/users/profile_image?screen_name={{ user}}" id="twitter-img"/>
       </div>
     </div>
-    <div class="container row" id="bookInfoContainer">
-      <div class="onethird" id="bookCoverContainer">
-        <img src="" id="bookCoverImg"/>
-        <div class="amazon-link">
-          Buy this on  <a href="http://www.amazon.com/s?field-keywords={{ bookTitle }}"><img src='img/amazon-logo.jpeg' class="amazon-icon"/></a>
-        </div>
+    <div class="container row" id="book-info-container">
+      <div class="onethird" id="book-cover-container">
+        <img src="" id="book-cover-img"/>
       </div>
-      <div id="viewerCanvasContainer" class="twothirds">
-        <div id="viewerCanvas" style="width: 100%; height: 100%; display: none"></div>
+      <div id="viewer-canvas-container" class="twothirds">
+        <div id="viewer-canvas" style="width: 100%; height: 100%; display: none"></div>
       </div>
     </div>
     <script type="text/javascript">
