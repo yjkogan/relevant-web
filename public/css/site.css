@@ -78,6 +78,7 @@ a:hover {
   height: 80%;
   max-width: 100%;
   float: right;
+  box-shadow: 4px 4px 4px #AAAAAA;
 }
 
 #book-info-container {
@@ -92,6 +93,8 @@ a:hover {
   margin-right: 10px;
   margin-top: 5px;
   min-width: 580px;
+  /* v-height needs to be what we want +30px since google adds a 30px bar below the container */
+  box-shadow: 4px 34px 4px #AAAAAA;
 }
 
 #viewer-canvas {
